@@ -6,7 +6,7 @@ ISubscriber subscriber= connection.GetSubscriber();
 
 while (true)
 {
-    Console.WriteLine("Mesaj: ");
+    Console.WriteLine("Mesaj: mesaj yok.");
     string message = Console.ReadLine();
     await subscriber.PublishAsync("mychanell", message);
 
